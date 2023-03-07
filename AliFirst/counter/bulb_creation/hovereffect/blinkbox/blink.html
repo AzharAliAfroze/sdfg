@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(function (){
+
+            $("#button1").click(function (){
+
+                $("#div").show(5000).toggleClass("div1")
+                
+
+
+            })
+
+            $("#pid").on({
+
+                mouseenter : function(){
+                    $(this).css({"background-color":"yellow"});
+                },
+                mouseleave : function(){
+                    $(this).css({"background-color":"cyan"})
+                },
+                click : function(){
+                    $(this).css({"background-color":"orange"})
+                }
+
+h
+            })
+
+            $("#fieldset1").css({"width":"300px","height":"250px"})
+
+
+
+        })
+
+
+    </script>
+    <style>
+        .div1{
+
+            height: 100px;
+            width:100px;
+            margin-top: 50px;
+            background-color: aqua;
+
+
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <fieldset id="fieldset1">
+
+            <div id="div" class="div1"></div>
+            <br/>
+
+
+            <p id="pid" style="width:300px">Click on this or hover over this line</p>
+    
+    
+            <button id="button1">click here</button>
+
+        </fieldset>
+
+    </center>
+    
+</body>
+</html>

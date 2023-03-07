@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <scrip src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></scrip>
+    <script>
+        $('#btnslideup').click(function(){
+            $("#div1").slideUp("slow")
+        });
+    </script>
+    
+</head>
+<body>
+    <center>
+        <fieldset id="div1" class="fieldclass">fuck off</fieldset>
+    </center>
+ 
+    <br>
+    <input type="button" id="btnslideup" value="slide up">
+    <input type="button" id="btnslidedown" value="slide down">
+    <input type="button" id="btnslidetoggle" value="slide toggle">
+</body>
+</html>

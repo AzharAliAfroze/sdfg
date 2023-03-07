@@ -1,0 +1,10 @@
+div#box{
+    left:0;
+    top: 0;
+    position: relative
+    width: 300%;
+    height: 100%;
+    border-top: 1px solid black;
+    background-color:teal;
+
+}

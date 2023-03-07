@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="counter.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+
+        $(function (){
+            var a=0
+
+            $("#fieldbox").css({"width":"50%","height":"50px"})
+
+            $("#BUTTON1").click(function (){
+                a++
+                $("#para").text(a)
+
+
+
+
+            })
+
+            $("#BUTTON2").click(function (){
+
+                a=0 
+                $("#para").text(a)
+            })
+
+            $("#BUTTON3").click(function (){
+
+                a--
+                $("#para").text(a)
+            })
+
+
+
+
+
+
+
+        })
+
+
+
+
+    </script>
+</head>
+<body>
+    <center>
+
+        <h1>COUNTER</h1>
+        <br/>
+
+        <fieldset id="fieldbox">
+
+            <p id="para"></p>
+
+
+
+        </fieldset>
+        
+        <div>
+            <button ID="BUTTON1">ADD</button>
+            <button ID="BUTTON2">REST</button>
+            <button ID="BUTTON3">SUB</button>
+        
+        </div>
+    </center>
+     
+</body>
+</html>
